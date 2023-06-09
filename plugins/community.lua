@@ -1,30 +1,16 @@
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.colorscheme.dracula-nvim", enabled = true },
-  { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
+  { import = "astrocommunity.pack.rust", enabled = true },
+  -- Colorschemes imported 
   { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
-  { import = "astrocommunity.colorscheme.gruvbox-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.everforest", enabled = true },
+  { import = "astrocommunity.colorscheme.gruvbox-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.nord-nvim", enabled = true },
-  { -- further customize the options set by the community
-    "catppuccin",
-    opts = {
-      integrations = {
-        sandwich = false,
-        noice = true,
-        mini = true,
-        leap = true,
-        markdown = true,
-        neotest = true,
-        cmp = true,
-        overseer = true,
-        lsp_trouble = true,
-        ts_rainbow2 = true,
-      },
-    },
-  },
+  { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
+
+  -- Rest of my plugins
   { import = "astrocommunity.completion.copilot-lua" },
+
   { -- further customize the options set by the community
     "copilot.lua",
     opts = {
