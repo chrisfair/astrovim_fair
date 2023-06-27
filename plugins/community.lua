@@ -7,6 +7,7 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.nord-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
+  { import = "astrocommunity.astocommunity.markdown-and-latex", enabled = true },
 
   -- Rest of my plugins
   { import = "astrocommunity.completion.copilot-lua" },
