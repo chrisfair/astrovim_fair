@@ -7,7 +7,7 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.nord-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
-  { import = "astrocommunity.astocommunity.markdown-and-latex", enabled = true },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim", enabled = true },
 
   -- Rest of my plugins
   { import = "astrocommunity.completion.copilot-lua" },
@@ -26,6 +26,27 @@ return {
         },
       },
     },
+  },
+
+  -- Language packs
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.zig" },
+
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" }, "markdown-preview-nvim",
+  opts = {
+    config = {
+      -- see
+      mappings = true,
+      port = 3000,
+    }
   },
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
